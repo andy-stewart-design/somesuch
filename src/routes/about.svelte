@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	let isLoaded = false;
 	onMount(() => {
-		console.log('test');
+		console.log('lwcm');
 		isLoaded = true;
 		return () => {
 			isLoaded = false;
