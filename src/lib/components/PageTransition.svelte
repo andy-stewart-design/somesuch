@@ -10,7 +10,7 @@
 
 {#key refresh}
 	<div
-		in:fade={{ duration: 500, delay: 700 }}
+		in:fade={{ duration: 500, delay: 800 }}
 		out:fade={{ duration: 500 }}
 		on:introstart={() => toggleModal()}
 	>

@@ -43,7 +43,7 @@
 	on:click={() => {
 		dispatch('openModal');
 	}}
-	class="fixed top-8 right-4 md:right-8 w-6 h-6 rounded-full bg-blue-600 z-40"
+	class="fixed top-8 right-4 md:right-8 w-6 h-6 rounded-full bg-blue-500 z-40"
 />
 
 <style>
