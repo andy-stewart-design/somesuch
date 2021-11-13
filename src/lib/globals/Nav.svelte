@@ -21,7 +21,7 @@
 </a>
 
 <div
-	class="fixed top-0 right-0 w-1/2 h-screen p-8 pt-20 bg-black z-30 transform translate-x-full transition-transform duration-500"
+	class="fixed top-0 right-0 w-1/2 h-screen p-8 pt-20 bg-blue-600 z-30 transform translate-x-full transition-transform duration-500"
 	class:modalOpen={$isModalActive}
 >
 	<nav class="flex flex-col items-start">

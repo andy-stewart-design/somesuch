@@ -14,8 +14,17 @@
 		out:fade={{ duration: 500 }}
 		on:introstart={() => toggleModal()}
 	>
-		<div class="relative w-screen h-screen overflow-scroll">
+		<div
+			class:fadePage={$isModalActive}
+			class="relative w-screen h-screen overflow-scroll opacity-100 transition-opacity duration-500"
+		>
 			<slot />
 		</div>
 	</div>
 {/key}
+
+<style>
+	.fadePage {
+		@apply opacity-50;
+	}
+</style>
