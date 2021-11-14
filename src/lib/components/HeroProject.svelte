@@ -1,14 +1,22 @@
 <script>
+	import { onMount } from 'svelte';
+
 	export let src = '';
 	export let alt = "andy's image";
-	export let isLoaded = false;
-
 	export let headline = '';
 	export let services = [];
 	export let specs = [];
 	export let objective = '';
 	export let approach = '';
 	export let solution = '';
+
+	let isLoaded = false;
+	onMount(() => {
+		isLoaded = true;
+		return () => {
+			isLoaded = false;
+		};
+	});
 </script>
 
 <div class="relative block bg-black">
@@ -16,7 +24,7 @@
 		<div class="fixed top-0 left-0 w-screen h-screen overflow-hidden z-0">
 			<img
 				class:isLoaded
-				class="w-screen h-full object-cover scale-150 opacity-50 transition-transform duration-1000 delay-1000 ease-out"
+				class="w-screen h-full object-cover scale-150 opacity-50 transition-transform duration-1000 delay-700 ease-out"
 				{src}
 				{alt}
 			/>

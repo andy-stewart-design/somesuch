@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Sohne';
+  font-style: normal;
+  font-weight: 400;
+  src:  url('/fonts/soehne-web-buch.woff2') format('woff2'),
+        url('/fonts/soehne-web-buch.woff') format('woff');
+}
+
 /* Write your global styles here, in PostCSS syntax */
 @tailwind base;
 @tailwind components;

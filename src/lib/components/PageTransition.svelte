@@ -25,6 +25,6 @@
 
 <style>
 	.fadePage {
-		@apply opacity-50;
+		@apply opacity-30;
 	}
 </style>
