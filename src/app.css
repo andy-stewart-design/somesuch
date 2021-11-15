@@ -14,3 +14,7 @@
 .isModalActive {
 	@apply -translate-x-1/2;
 }
+
+.transition-fade {
+    @apply opacity-100;
+}

@@ -1,14 +1,9 @@
 <script>
-	import { onMount } from 'svelte';
 	import HeroProject from '$lib/components/HeroProject.svelte';
-
-	let isLoaded = false;
-	onMount(() => {
-		isLoaded = true;
-		return () => {
-			isLoaded = false;
-		};
-	});
+	import IntersectionOberver from '$lib/components/IntersectionOberver.svelte';
+	import Wrapper from '$lib/components/Wrapper.svelte';
+	import Image from '$lib/components/Image.svelte';
+	import Video from '$lib/components/Video.svelte';
 
 	let headline = 'Promoting the Future of Seafood';
 	let services = [
@@ -26,16 +21,20 @@
 </script>
 
 <HeroProject {headline} {services} {specs} {objective} {approach} {solution} src="/FPO-05.jpeg" />
-<main class="relative text-white bg-black px-8 py-24">
-	<h1 class:isLoaded class="text-blue-500 transition-colors duration-1000 delay-1000">
-		About SvelteKit
-	</h1>
-	<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-	<img src="/FPO-02.jpeg" alt="kjebdck" />
-</main>
 
-<style>
-	.isLoaded {
-		@apply text-white;
-	}
-</style>
+<IntersectionOberver>
+	<main class="relative text-white bg-black px-2 md:px-6 py-16">
+		<Wrapper>
+			<Image dataSrc="/FPO-03.jpeg" isLazy={true} />
+		</Wrapper>
+		<Wrapper width="half">
+			<Image slot="l" dataSrc="/FPO-04.jpeg" isLazy={true} />
+			<Image slot="r" dataSrc="/FPO-05.jpeg" isLazy={true} />
+		</Wrapper>
+		<Wrapper>
+			<Video
+				src="https://player.vimeo.com/external/641529594.hd.mp4?s=098261326121d8b78a2e1ed27042eead40934e93&profile_id=175"
+			/>
+		</Wrapper>
+	</main>
+</IntersectionOberver>

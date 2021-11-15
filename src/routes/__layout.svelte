@@ -36,7 +36,7 @@
 
 {#if isNotLoaded}
 	<div
-		transition:fade={{ duration: 500, delay: 500 }}
+		transition:fade={{ duration: 500, delay: 700 }}
 		class="fixed top-0 left-0 w-screen h-screen bg-black z-100"
 	/>
 {/if}
