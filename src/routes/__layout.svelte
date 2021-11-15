@@ -22,7 +22,7 @@
 	});
 </script>
 
-<div class="relative bg-black">
+<div class="relative bg-black antialiased">
 	<Nav activeLink={$page.path} />
 	<div
 		class:isModalActive={$isModalActive}
