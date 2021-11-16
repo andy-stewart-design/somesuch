@@ -17,10 +17,10 @@
 							let image = entry.target;
 							image.src = image.dataset.src;
 							setTimeout(() => {
-								if (image.complete) {
-									console.log('image complete', image);
-									image.classList.add('transition-fade');
-								}
+								// if (image.complete) {
+								console.log('image complete', image);
+								image.classList.add('transition-fade');
+								// }
 							}, 500);
 							lazyMediaObserver.unobserve(image);
 						}
