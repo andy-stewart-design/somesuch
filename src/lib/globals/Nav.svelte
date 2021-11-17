@@ -12,6 +12,8 @@
 
 	let navLinks = [
 		{ name: 'Home', link: '/' },
+		{ name: 'Work', link: '/work' },
+		{ name: 'Wildtype', link: '/work/wildtype' },
 		{ name: 'About', link: '/about' }
 	];
 </script>
@@ -43,7 +45,7 @@
 	on:click={() => {
 		dispatch('openModal');
 	}}
-	class="fixed top-8 right-4 md:right-8 w-6 h-6 rounded-full bg-blue-500 z-40"
+	class="fixed top-8 right-4 md:right-8 w-6 h-6 rounded-full bg-white z-40"
 />
 
 <style>
