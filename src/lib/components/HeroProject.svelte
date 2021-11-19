@@ -29,7 +29,7 @@
 				{alt}
 			/>
 		</div>
-		<div class="relative flex items-end w-full md:h-screen px-2 py-4 md:px-6 md:py-8">
+		<div class="relative flex items-end w-full md:h-screen px-2 py-4 md:px-28 md:py-8">
 			<div class="flex flex-wrap w-full">
 				<div class="w-full md:w-1/3 h-28 md:h-auto pl-2 pr-8 mb-8 md:mb-0">
 					<h1 class="relative text-3xl text-white">{headline}</h1>
@@ -52,7 +52,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="relative flex flex-wrap w-full px-2 md:px-6 pb-24 md:py-24">
+		<div class="relative flex flex-wrap w-full px-2 md:px-28 pb-24 md:py-24">
 			<div class="flex flex-row md:flex-col w-full md:w-1/3 pl-2 pr-8 mb-8 md:mb-0">
 				<div class="w-8 md:w-auto h-auto md:h-8 md: mb-4">
 					<p

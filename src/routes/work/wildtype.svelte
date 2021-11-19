@@ -35,8 +35,10 @@
 	src="/work/wildtype/wildtype-hero.jpeg"
 />
 
+<!-- To add: blob video, mobile screen collage, macbook in situ -->
+
 <IntersectionOberver>
-	<main class="relative text-white bg-black px-2 md:px-6 py-16">
+	<main class="relative text-white bg-black px-2 md:px-28 py-16">
 		<Wrapper>
 			<Video
 				src="https://player.vimeo.com/external/641529594.hd.mp4?s=098261326121d8b78a2e1ed27042eead40934e93&profile_id=175"
@@ -74,7 +76,7 @@
 
 		<Wrapper>
 			<!-- replace with collage of mobile screens -->
-			<Image dataSrc="/FPO-03.jpeg" isLazy={true} />
+			<Image dataSrc="/work/wildtype/wildtype-mobile-insitu-01.jpeg" isLazy={true} />
 		</Wrapper>
 
 		<Wrapper>
