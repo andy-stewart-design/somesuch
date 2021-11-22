@@ -52,7 +52,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="relative flex flex-wrap w-full px-2 md:px-28 pb-24 md:py-24">
+		<div class="relative flex flex-wrap w-full px-2 md:px-24 pb-24 md:py-24">
 			<div class="flex flex-row md:flex-col w-full md:w-1/3 pl-2 pr-8 mb-8 md:mb-0">
 				<div class="w-8 md:w-auto h-auto md:h-8 md: mb-4">
 					<p
