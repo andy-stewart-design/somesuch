@@ -5,7 +5,7 @@
 	export let alt = "andy's image";
 </script>
 
-<div class="bg-white bg-opacity-10">
+<div class="bg-blue-500 bg-opacity-10">
 	<img
 		class:lazy-media={isLazy === true}
 		class:opacity-0={isLazy === true}

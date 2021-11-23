@@ -40,7 +40,7 @@
 <IntersectionOberver>
 	<main class="relative text-white bg-black px-2 md:px-24 py-16">
 		<Wrapper>
-			<Image dataSrc="/work/wildtype/wildtype-home-insitu-02.jpeg" isLazy={true} />
+			<Image dataSrc="/work/wildtype/wildtype-home-insitu.jpeg" isLazy={true} />
 		</Wrapper>
 
 		<Wrapper>
@@ -66,7 +66,14 @@
 			<Image dataSrc="/work/wildtype/wildtype-careers.jpeg" isLazy={true} />
 		</Wrapper>
 
-		<!-- insert 50/50 here: blob crop + collages -->
+		<Wrapper width="half">
+			<Image slot="l" dataSrc="/work/wildtype/wildtype-team-01.jpeg" isLazy={true} />
+			<Video
+				slot="r"
+				width="half"
+				src="https://player.vimeo.com/external/649157759.hd.mp4?s=22efce12e3d93b5e932ea0cb855acbee96fe3903&profile_id=175"
+			/>
+		</Wrapper>
 
 		<Wrapper>
 			<Image dataSrc="/work/wildtype/wildtype-lifestyle-01.jpeg" isLazy={true} />
