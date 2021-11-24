@@ -18,7 +18,7 @@
 	];
 </script>
 
-<a class="fixed top-8 left-4 md:left-7 w-12 h-12 z-40 p-1" href="/">
+<a class="fixed top-8 left-4 xl:left-7 w-12 h-12 z-40 p-1" href="/">
 	<AndyLogo dark={true} />
 </a>
 
@@ -45,7 +45,7 @@
 	on:click={() => {
 		dispatch('openModal');
 	}}
-	class="fixed top-8 right-4 md:right-7 w-12 h-12 p-3 rounded-full z-40"
+	class="fixed top-8 right-4 xl:right-7 w-12 h-12 p-3 rounded-full z-40"
 >
 	<div class="w-full h-full bg-white rounded-full" />
 </button>
