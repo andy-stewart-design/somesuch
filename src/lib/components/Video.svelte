@@ -26,7 +26,9 @@
 		<track kind="captions" />
 		Sorry, your browser doesn't support embedded videos.
 	</video>
-	<!-- <div class="absolute top-0 left-0 w-full h-full bg-red-500" /> -->
+	<!-- {#if video.paused} -->
+	<!-- <div class="absolute top-0 left-0 w-full h-full bg-red-500 bg-opacity-50" /> -->
+	<!-- {/if} -->
 </div>
 
 <style>

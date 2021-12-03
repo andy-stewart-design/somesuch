@@ -10,7 +10,8 @@
 
 		let lazyMediaObserver = new IntersectionObserver(
 			(entries) => {
-				entries.forEach((entry) => {
+				entries.forEach((entry, index) => {
+					// console.log(index);
 					if (entry.target.nodeName === 'IMG') {
 						// console.log('Image: ' + entry.isIntersecting);
 						if (entry.isIntersecting) {
@@ -18,7 +19,7 @@
 							image.src = image.dataset.src;
 							setTimeout(() => {
 								// if (image.complete) {
-								console.log('image complete', image);
+								// console.log('image complete', image);
 								image.classList.add('transition-fade');
 								// }
 							}, 500);
@@ -28,12 +29,12 @@
 					if (entry.target.nodeName === 'VIDEO') {
 						// console.log('Video: ' + entry.isIntersecting);
 						let video = entry.target;
-						if (entry.isIntersecting && isPaused) {
+						if (entry.isIntersecting && video.paused === true) {
 							video.play();
-							isPaused = false;
-						} else if (!isPaused) {
+							console.log(video.paused);
+						} else if (!entry.isIntersecting && video.paused === false) {
 							video.pause();
-							isPaused = true;
+							console.log(video.paused);
 						}
 					}
 				});
